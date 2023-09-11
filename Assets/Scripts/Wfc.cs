@@ -382,8 +382,6 @@ namespace LevelEditing.WaveFunctionCollapsing
 
             sumOfPossiblePatterns[_cellIndex] = 1;
 
-            // TODO: Basetexture removal updates. Wie im alten wfc
-
             return removals;
         }
         #endregion Collapse Cell -----------------------------------------------------------------
@@ -436,7 +434,7 @@ namespace LevelEditing.WaveFunctionCollapsing
             _newUpdate = new List<RemovalUpdate>();
 
             int directionToThisCellX = _xIndex - _update.XIndex;
-            int directionToThisCellY = _yIndex - _update.YIndex; // Checken ob das hier gut ist
+            int directionToThisCellY = _yIndex - _update.YIndex; 
 
             int d = 0;
             if (directionToThisCellX == -1)
